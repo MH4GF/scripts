@@ -1,0 +1,28 @@
+{
+  "name": "@mh4gf/scripts",
+  "version": "1.0.0",
+  "description": "My scripts",
+  "main": "bin/translate-strings.mjs",
+  "type": "module",
+  "bin": {
+    "translate-strings": "./bin/translate-strings.mjs"
+  },
+  "scripts": {
+    "translate": "zx bin/translate-strings.mjs",
+    "translate:dry-run": "zx bin/translate-strings.mjs --dry-run"
+  },
+  "keywords": [
+    "codemod",
+    "translation",
+    "japanese",
+    "english",
+    "jscodeshift"
+  ],
+  "author": "MH4GF",
+  "license": "MIT",
+  "dependencies": {
+    "jscodeshift": "^17.0.0",
+    "openai": "^4.56.0",
+    "zx": "^8.1.4"
+  }
+}
